@@ -6,4 +6,14 @@
     <string name="weight">Peso</string>
     <string name="age">Edad</string>
     <string name="calc">Calcular</string>
+    <string name="underweight">Peso bajo</string>
+    <string name="normalWeight">Peso normal</string>
+    <string name="overweight">Sobrepeso</string>
+    <string name="obesity">Obesidad</string>
+    <string name="underweightDesc">Tu peso es demasiado bajo. Deberías consultar con un profesional.</string>
+    <string name="normalWeightDesc">Tienes un peso normal, ¡enhorabuena!</string>
+    <string name="overweightDesc">Tienes sobrepeso. No pasa nada pero deberías hacer más ejercicio.</string>
+    <string name="obesityDesc">Tienes obesidad. Deberías consultar con un profesional.</string>
+    <string name="result">Tu resultado</string>
+    <string name="IMC">10.00</string>
 </resources>

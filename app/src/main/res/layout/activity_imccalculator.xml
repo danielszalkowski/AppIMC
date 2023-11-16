@@ -92,6 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent">
         
         <LinearLayout
+            android:paddingTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -135,7 +136,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/viewPeso"
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="165dp"
         android:layout_marginTop="184dp"
         android:layout_marginEnd="16dp"
         app:cardBackgroundColor="@color/bg_comp"
@@ -165,7 +166,7 @@
             </TextView>
 
             <TextView
-                android:id="@+id/textPeso"
+                android:id="@+id/tvWeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="60"
@@ -179,28 +180,29 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/btnSubtractWeightAdd"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:contentDescription="TODO"
-                    android:src="@drawable/ic_add"
-                    app:backgroundTint="@color/purple_500"
-                    app:tint="@color/white">
 
-                </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnSubtractWeightRemove"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/purple_500"
+                    android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_remove"
                     android:tint="@color/white"
                     android:contentDescription="TODO">
-
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnSubtractWeightAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_add"
+                    app:backgroundTint="@color/purple_500"
+                    app:tint="@color/white">
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -208,7 +210,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/viewEdad"
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="165dp"
         android:layout_marginTop="184dp"
         app:cardBackgroundColor="@color/bg_comp"
 
@@ -222,7 +224,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -235,7 +238,7 @@
                 android:textStyle="bold"></TextView>
 
             <TextView
-                android:id="@+id/textEdad"
+                android:id="@+id/tvAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="18"
@@ -250,25 +253,24 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/btnSubtractAgeAdd"
+                    android:id="@+id/btnSubtractAgeRemove"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:contentDescription="TODO"
-                    android:src="@drawable/ic_add"
-                    app:backgroundTint="@color/purple_500"
-                    app:tint="@color/white">
-
-                </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/btnAgeRemove"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:backgroundTint="@color/purple_500"
                     android:contentDescription="TODO"
                     android:src="@drawable/ic_remove"
                     android:tint="@color/white"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnSubtractAgeAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_add"
+                    app:backgroundTint="@color/purple_500"
+                    app:tint="@color/white">
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
             </LinearLayout>
         </LinearLayout>
@@ -277,9 +279,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/calcButton"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:background="@color/purple_500"
-        android:fontFamily="serif-monospace"
         android:text="@string/calc"
         android:textColor="@color/white"
         android:textSize="32sp"
